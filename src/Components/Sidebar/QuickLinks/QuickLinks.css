@@ -1,0 +1,11 @@
+.quickLinks{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 2em;
+    justify-content: space-evenly;
+}
+
+.linkIconQ {
+    max-height: 2vw;
+}

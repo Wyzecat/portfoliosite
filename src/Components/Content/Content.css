@@ -1,0 +1,30 @@
+section {
+    background-color: #2e2e2e;
+    border: 0.5em solid #029d61;
+    display: block;
+    padding: 2em;
+    font-family: 'Inter';
+    color: #d9d9d9;
+    height: inherit;
+    margin: auto;
+    overflow: auto;
+    min-height: 0;
+}
+
+section h2{
+    font-weight: 550;
+}
+
+table {
+    background-color: #5e5e5e;
+    text-align: center;
+}
+
+.tableHead td {
+    padding: 0.5em 2em;
+    background-color: #5e5e5e;
+}
+.tableRow td {
+    padding: 0.5em 2em;
+    background-color: #2e2e2e;
+}
