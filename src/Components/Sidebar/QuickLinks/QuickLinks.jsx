@@ -4,9 +4,9 @@ import '../../../App.css';
 import linkedinLogo from '../../../Media/InBug-White.png'
 import githubLogo from '../../../Media/GitHub_Invertocat_White.svg'
 
-function QuickLinks() {
+function QuickLinks(props) {
     return (
-            <div className="quickLinks">
+            <div className={props.location == "sidebar" ? "quickLinks sidebar" : "quickLinks footer"}>
                 <a className="quickLink" href="https://www.linkedin.com/in/andrew-tagawa-b96467185/" target="_blank">
                     <img src={linkedinLogo} className="linkIconQ" alt="linkedin"/>
                 </a>

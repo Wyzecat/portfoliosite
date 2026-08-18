@@ -4,12 +4,16 @@ import '../../../App.css';
 function ProjectCard(props){
     let cardclass = "projectCard ";
     cardclass += props.position;
-    let textclass = "projectDescription"
+    let textclass = "projectDescription "
     textclass += props.position;
     return(
     <>
         <div className={textclass}>
-            <p>{props.text}</p>
+            <h3 className='projectDescriptionTitle'>{props.name}</h3>
+            <p className="projectDescriptionText">{props.text}</p>
+            <button className='openModal' onClick={()=>{
+                props.updateStatus(props.name)}
+            }>Click for More</button>
         </div>
         <div className={cardclass}>
             <img className='cardImg' src={props.path} />

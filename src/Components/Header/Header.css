@@ -1,8 +1,21 @@
-.headerText {
-  font-size: 2.2vw;
-  text-align: center;
-  font-family: 'Inter';
-  font-weight: 650;
-  margin: auto;
-  color: #d9d9d9;
+@media (min-width: 1100px) {
+  .headerText {
+    font-size: 2.2vw;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 650;
+    margin: auto;
+    color: #d9d9d9;
+  }
+}
+
+@media (max-width: 1099px) {
+  .headerText {
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 650;
+    margin: auto;
+    color: #d9d9d9;
+  }
 }

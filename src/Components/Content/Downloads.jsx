@@ -15,12 +15,12 @@ function Downloads(){
                 <tr className='tableRow'>
                     <td>Resume</td>
                     <td>2026/08/06</td>
-                    <td><a>Download</a></td>
+                    <td><a className='tableDownload'>Download</a></td>
                 </tr>
                 <tr className='tableRow'>
                     <td>Curry Recipe</td>
                     <td>2026/07/01</td>
-                    <td><a>Download</a></td>
+                    <td><a className='tableDownload'>Download</a></td>
                 </tr>
             </table>
         </section>

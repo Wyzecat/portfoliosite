@@ -13,7 +13,7 @@ function Sidebar(){
             <SidebarButton link="/downloads" name="Downloads" status={status} updateStatus={setStatus}/>
             <SidebarButton link="/about" name="About" status={status} updateStatus={setStatus}/>
             <SidebarButton link="/contact" name="Contact Me" status={status} updateStatus={setStatus}/>
-            <QuickLinks />
+            <QuickLinks location="sidebar" />
         </nav>
     );
 }
