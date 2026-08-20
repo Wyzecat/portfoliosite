@@ -24,7 +24,7 @@
 
 .modalTitle{
     justify-self: flex-start;
-    font-size: 1.65vw;
+    font-size: 1.5vw;
     margin: 0;
 }
 
@@ -47,7 +47,7 @@
     border: 1px solid #029d61;
     height: 3vw;
     width: 3vw;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: #d9d9d9;
     text-align: center;
     padding: 0;

@@ -5,7 +5,7 @@ function Contact(){
         <section className='Contact'>
             <h2 className='TitleTxt'>CONTACT ME</h2>
             <hr/>
-            <p>To contact me, simply fill out the form below.</p>
+            <p>To contact me, simply fill out the form below (redirects to an external confirmation page).</p>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <div className="contactForm">
                     <input type="hidden" name="access_key" value="b00d2d46-cb22-4152-9916-8ecfc271d690"/>

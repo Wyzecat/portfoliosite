@@ -10,7 +10,7 @@
     border: 10px ;
     display: grid;
     background-color: #4e4e4e;
-    padding: 1em;
+    padding: 1.5em 1.5em 0.5em 1.5em;
     margin-bottom: 1em;
     transition: background-color 0.2s ease-in-out;
     z-index: 0;
@@ -73,6 +73,7 @@
 
 .cardText{
     text-align: center;
+    padding: 0.5em 0;
 }
 
 .p1 {
@@ -93,4 +94,17 @@
 .p4 {
     grid-column: 4;
     grid-row: 1;
+}
+
+
+@media (max-width:1099px) {
+    .projectDescriptionTitle{
+        font-size: 12pt;
+    }
+    .projectDescriptionText{
+        font-size: 10pt;
+    }
+    .openModal{
+        font-size:10pt;
+    }
 }
