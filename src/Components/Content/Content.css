@@ -5,9 +5,9 @@ section {
     padding: 2em;
     font-family: 'Inter';
     color: #d9d9d9;
-    height: inherit;
+    height: auto;
     margin: auto;
-    overflow: auto;
+    overflow-y: auto;
     min-height: 0;
 }
 
@@ -18,15 +18,19 @@ section h2{
 table {
     background-color: #5e5e5e;
     text-align: center;
+    border-collapse: collapse;
 }
 
-.tableHead td {
+.tableHead th {
     padding: 0.5em 2em;
-    background-color: #5e5e5e;
+    background-color: #029d61;
+    border: 1px solid #029d61;
 }
 .tableRow td {
     padding: 1em 2em;
     background-color: #2e2e2e;
+    border: 1px solid #029d61;
+    border-top: 0;
 }
 
 .tableDownload {
@@ -78,7 +82,7 @@ table {
 
 .submit{
     background-color: #029d61;
-    color: #d9d9d9;
+    color: #2e2e2e;
     border: 1px solid #029d61;
     font-family: 'Inter';
     font-weight: 300;
@@ -125,17 +129,12 @@ table {
 }
 
 .Projects{
-    display: grid;
-    grid-template-rows: repeat(2,auto);
-    grid-template-columns: repeat(8,1fr);
-}
-
-.ProjectTextContainer{
-    grid-column: 1/span 8;
-    grid-row: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .tableDownload {
-    color: #d9d9d9;
+    color: #2e2e2e;
     text-decoration: none;
+    font-weight: 500;
 }

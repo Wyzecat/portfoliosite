@@ -21,8 +21,8 @@ function Main(){
     return (
         <main>
             <Routes>
-              <Route path="/" element={<Home theme={theme}/>} />
-              <Route path="/Projects" element={<Projects theme={theme}/>} />
+              {/*<Route path="/" element={<Home theme={theme}/>} />*/}
+              <Route path="/" element={<Projects theme={theme}/>} />
               <Route path="/Downloads" element={<Downloads theme={theme}/>} />
               <Route path="/About" element={<About theme={theme}/>} />
               <Route path="/Contact" element={<Contact theme={theme}/>} />

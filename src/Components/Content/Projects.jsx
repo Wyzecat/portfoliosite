@@ -10,7 +10,7 @@ function Projects(){
     return (
         <section className='Projects'>
             <div className="ProjectTextContainer">
-                <h2 className='TitleTxt'>MY PROJECTS</h2>
+                <h2 className='TitleTxt'>WELCOME TO MY WEBSITE</h2>
                 <hr/>
                 <p>Below are some of the projects I have worked on or am currently working on.</p>
             </div>
