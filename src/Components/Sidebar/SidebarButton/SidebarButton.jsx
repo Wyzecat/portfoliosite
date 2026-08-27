@@ -7,7 +7,7 @@ function SidebarButton(props){
         <div className='SidebarButton' onClick={()=>{
                 console.log(props.status);
                 props.updateStatus(props.name);
-            }} className={((props.name.toLowerCase().includes(props.status) && props.status != "") || props.status == props.name || (props.status == '' && props.name =='Home')) ? 'SidebarButton selected' : 'SidebarButton' }>
+            }} className={((props.name.toLowerCase().includes(props.status) && props.status != "") || props.status == props.name || (props.status == '' && props.name =='Projects')) ? 'SidebarButton selected' : 'SidebarButton' }>
             <Link to={props.link}>
                 <h2 className='buttonText'>{props.name}</h2>
             </Link>

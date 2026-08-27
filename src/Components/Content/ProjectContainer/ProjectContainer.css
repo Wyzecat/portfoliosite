@@ -1,3 +1,8 @@
+:root {
+    /* Tells the browser it is allowed to animate keyword sizes like 'auto' */
+    interpolate-size: allow-keywords;
+}
+
 .projectContainer{
     display: flex;
     flex-direction: column;
@@ -5,43 +10,41 @@
 
 .projectCard{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     background-color: #029d61;
-    padding: 1.5em 1.5em 1.5em 1.5em;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s;
+    padding: 0em 1em;
     z-index: 0;
-    height: 2vh;
+    min-height: 2vh;
     color: #2e2e2e;
+    overflow: auto;
 }
 
 .projectCard:hover{
-    cursor: pointer;
     background-color: #03c479;
+    cursor: pointer;
 }
 .projectCard.true{
-    background-color: #03c479;
+    background-position: -100% 0;
 }
 
 .collapsed{
     max-height: 0;
     overflow: hidden;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    background-color: #4e4e4e;
+    border: 1px solid transparent;
 }
 
 .expanded{
     height: auto;
     background-color: #4e4e4e;
-    border-left: 0.5em solid #029d61;
-    border-right: 0.5em solid #029d61;
-    border-bottom: 0.5em solid #029d61;
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 6fr;
+}
+
+.projectCard:has(.expanded){
+    padding-bottom: 1em;
 }
 
 .expanded.true{
@@ -104,6 +107,10 @@
     border: 1px solid #03c479;
 }
 
+.content{
+    cursor:default;
+}
+
 .cardImg{
     margin-right: 1em;
 }
@@ -123,10 +130,10 @@
 .cardRight {
     display: flex;
     flex-direction: column;
+    color: #d9d9d9;
 }
 
 .download {
-    background-color: #029d61;
     padding: 0.25em 1em;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
@@ -138,11 +145,12 @@
     flex-direction: row;
     align-items: center;
     padding: 0 1em;
+    background-color: #029d61;
+    transition: background-color 0.2s;
 }
 
 .download:hover {
     background-color: #03c479;
-    color: #2e2e2e;
 }
 
 .chevron {
