@@ -1,0 +1,12 @@
+{
+    "name": "Portfolio Website",
+    "minor": "React",
+    "text": "Placeholder text",
+    "links": [
+        {"text":"Source Code (Github)", "url":"https://github.com/Wyzecat/portfoliosite"}
+    ],
+    "images": [
+        {"small": "PortfolioWebsite/phgreen.png", "big": "PortfolioWebsite/phgreenbig.png", "name":"placeholder","order":"1"},
+        {"small": "PortfolioWebsite/phgreen.png", "big": "PortfolioWebsite/phgreenbig.png", "name":"placeholder 2","order":"2"}
+    ]
+}

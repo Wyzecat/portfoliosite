@@ -4,17 +4,15 @@ import { useState } from 'react';
 import ModalImage from 'react-modal-image';
 
 function Images(props){
-    /*
-        props.images
-        - big
-        - small
-    */
     const pics = [];
     for(let i = 0; i < props.images.length; i++){
         const pathSmall = props.images[i].small;
+        const srcSmall = `/ProjectImages/${pathSmall}`;
         const pathBig = props.images[i].big;
+        const srcBig = `/ProjectImages/${pathBig}`;
+        console.log(pathSmall);
         pics.push(
-            <ModalImage className={`cardImg${props.currentImage == props.images[i].order ? '' : ' hidden'}`} small={pathSmall} large={pathBig} alt={props.images[i].name} />
+            <ModalImage className={`cardImg${props.currentImage == props.images[i].order ? '' : ' hidden'}`} small={srcSmall} large={srcBig} alt={props.images[i].name} />
         )
     }
     return pics;

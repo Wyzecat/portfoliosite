@@ -128,12 +128,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
 }
 
 .cardRight {
+    border-left: 1px solid #7e7e7e;
+    padding-left: 1.5em;
     display: flex;
     flex-direction: column;
     color: #d9d9d9;
+}
+
+.cardPText {
+    margin: 0 0 0.5em 0;
 }
 
 .imgSelect{
@@ -195,6 +202,7 @@
 .cardImg {
     object-fit: contain;
     border: 1px solid #029d61;
+    width: 100%;
 }
 
 .cardImg.hidden {
@@ -231,6 +239,12 @@
 
 .download:hover {
     background-color: #03c479;
+}
+
+.postTxtIcon {
+    align-self: center;
+    margin-left: 0.2em;
+    height: 1.5vw;
 }
 
 .chevron {

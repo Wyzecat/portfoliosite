@@ -3,14 +3,14 @@ import '../../../App.css';
 import placeholder from '../../../Media/phgreen.png'
 import placeholderBig from '../../../Media/phgreenbig.png'
 import ProjectCard from './ProjectCard';
+import littleLemon from './ProjectFiles/LittleLemon.json';
+import portfolioWebsite from './ProjectFiles/PortfolioWebsite.json'
 
 function ProjectContainer(props){
     return(
         <div className='projectContainer'>
-            <ProjectCard path={placeholder} pathBig={placeholderBig} position="p1" name="Little Lemon Capstone Website" text="Placeholder text" minor="Placeholder Text" status={props.status} updateStatus={props.updateStatus} links={[{text:'Github', url:'https://github.com/Wyzecat/little-lemon'}]}/>
-            <ProjectCard path={placeholder} pathBig={placeholderBig} position="p2" name="Portfolio Website" text="Placeholder text" minor="Placeholder Text" status={props.status} updateStatus={props.updateStatus} links={[{text:'Github', url:"https://github.com/Wyzecat/portfoliosite"}]}/>
-            {/*<ProjectCard path={placeholder} position="p3" name="Project 3" text="Placeholder text" minor="Placeholder Text" status={props.status} updateStatus={props.updateStatus}/>
-            <ProjectCard path={placeholder} position="p4" name="Project 4" text="Placeholder text" minor="Placeholder Text" status={props.status} updateStatus={props.updateStatus}/>*/}
+            <ProjectCard path={placeholder} pathBig={placeholderBig} position="p1" images={littleLemon.images} name={littleLemon.name} text={littleLemon.text} minor={littleLemon.minor} status={props.status} updateStatus={props.updateStatus} linkArray={littleLemon.links}/>
+            <ProjectCard path={placeholder} pathBig={placeholderBig} position="p2" images={portfolioWebsite.images} name={portfolioWebsite.name} text={portfolioWebsite.text} minor={portfolioWebsite.minor} status={props.status} updateStatus={props.updateStatus} linkArray={portfolioWebsite.links}/>
         </div>
     )
 }
