@@ -98,8 +98,78 @@ table {
     font-size: 1.5vw;
 }
 
+.break {
+    max-height: 1em;
+}
 
-@media (max-width: 1099px) {
+.profile {
+    color: #2e2e2e;
+}
+
+
+@media (min-width: 1201px){
+    .aboutContent{
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        column-gap: 1em;
+    }
+    .aboutLeft {
+        background-color: #029d61;
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .headshot{
+        object-fit: contain;
+        width: 100%;
+    }
+    .profile {
+        right: 100%;
+        font-size: 0.9vw;
+    }
+    .profile li {
+        list-style-type: square;
+        margin-bottom: 1em;
+    }
+
+    .aboutRight{
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 1200px){
+    .aboutContent{
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        justify-content: center;
+    }
+    .aboutLeft {
+        background-color: #029d61;
+        padding: 0.5em;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-row: 1;
+        margin-top: 0.5em;
+    }
+
+    .headshot{
+        grid-column: 1;
+        object-fit: contain;
+        width: 100%;
+        max-height: 10em;
+    }
+    .profile {
+        align-self: center;
+        margin-left: -1em;
+        grid-column: 2;
+    }
+    .TitleTxt{
+        font-size: 20pt;
+    }
+
     .submit{
         background-color: #029d61;
         color: #d9d9d9;
@@ -107,6 +177,26 @@ table {
         font-family: 'Inter';
         font-weight: 300;
         font-size: 1.5vw;
+        padding: 1em 3em;
+        align-self: center;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    }
+    .profile li {
+        list-style-type: none;
+        margin-bottom: 1em;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .submit{
+        background-color: #029d61;
+        color: #d9d9d9;
+        border: 1px solid #029d61;
+        font-family: 'Inter';
+        font-weight: 300;
+        font-size: 2.75vw;
         padding: 1em 3em;
         align-self: center;
         cursor: pointer;
@@ -150,4 +240,8 @@ table {
     text-decoration: none;
     font-weight: 500;
     padding: 0.5em 2em;
+}
+
+.downloadTable{
+    width: 100%;
 }

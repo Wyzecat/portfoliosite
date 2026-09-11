@@ -1,4 +1,4 @@
-@media (min-width: 1100px) {
+@media (min-width: 1201px) {
     .quickLinks{
         display: flex;
         flex-direction: row;
@@ -16,7 +16,25 @@
     }
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1200px) {
+    .quickLinks{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-top: 3em;
+        justify-content: space-evenly;
+    }
+
+    .linkIconQ {
+        max-height: 4vw;
+    }
+
+    .footer{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
     .quickLinks{
         display: flex;
         flex-direction: row;
@@ -26,7 +44,7 @@
     }
 
     .linkIconQ {
-        max-height: 3.5vw;
+        max-height: 6vw;
     }
 
     .sidebar{

@@ -10,7 +10,6 @@ function Images(props){
         const srcSmall = `/ProjectImages/${pathSmall}`;
         const pathBig = props.images[i].big;
         const srcBig = `/ProjectImages/${pathBig}`;
-        console.log(pathSmall);
         pics.push(
             <ModalImage className={`cardImg${props.currentImage == props.images[i].order ? '' : ' hidden'}`} small={srcSmall} large={srcBig} alt={props.images[i].name} />
         )

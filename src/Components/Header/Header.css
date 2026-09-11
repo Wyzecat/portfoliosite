@@ -1,4 +1,4 @@
-@media (min-width: 1100px) {
+@media (min-width: 1201px) {
   .headerText {
     font-size: 2.2vw;
     text-align: center;
@@ -9,9 +9,20 @@
   }
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1200px) {
   .headerText {
-    font-size: 5vw;
+    font-size: 4vw;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 650;
+    margin: auto;
+    color: #d9d9d9;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerText {
+    font-size: 6vw;
     text-align: center;
     font-family: 'Inter';
     font-weight: 650;

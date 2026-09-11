@@ -5,7 +5,7 @@ body {
 }
 
 /* Site Layout */
-@media (min-width: 1100px) {
+@media (min-width: 1201px) {
   .App {
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -57,8 +57,60 @@ body {
   }
 }
 
+@media (min-width:600px) and (max-width: 1200px) {
+  .App {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 1em;
+    grid-template-rows: auto 9fr auto;
+    min-width: 0px;
+    min-height: 100vh;
+  }
 
-@media (max-width: 1099px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1/span 12;
+    margin: 0px;
+    background-color: #029d61;
+    padding: 1em;
+  }
+
+  main {
+    justify-content: center;
+    grid-row: 2;
+    grid-column: 4/span 9;
+    padding: 1em 1em 1em 0;
+  }
+
+  .Sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 1/span 3;
+    border-right: 1px solid #2e2e2e;
+    padding: 0px;
+    background-color: #2e2e2e;
+  }
+
+  footer{
+    border-top: 1px solid #2e2e2e;
+    background-color: #029d61;
+    display: flex;
+    grid-row: 3;
+    grid-column: 1/span 12;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0px;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
   .App {
     display: flex;
     flex-direction: column;

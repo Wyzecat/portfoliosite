@@ -1,4 +1,4 @@
-@media (min-width: 1100px) {
+@media (min-width: 601px) {
     .verNum {
         font-family: 'Inter';
         font-weight: 300;
@@ -31,7 +31,7 @@
 }
 
 
-@media (max-width: 1099px) {
+@media (max-width: 600px) {
     .verNum {
         display: none;
     }

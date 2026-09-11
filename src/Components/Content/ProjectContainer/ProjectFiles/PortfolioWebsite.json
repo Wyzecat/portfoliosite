@@ -1,12 +1,12 @@
 {
     "name": "Portfolio Website",
     "minor": "React",
-    "text": "Placeholder text",
+    "text": "This website was made to double as both showcase and functional portfolio.  I designed it to stand out from the crowd of single-page scrolling Bootstrap sites while using a minimalist color palette.  While it lacks some of the flash of fancily-animated portfolio sites, I was aiming to have its simplicity speak loudest.\n\nThrough a series of iterative changes, I slimmed this site down from its original version and added features that I intended to enhance the user experience.",
     "links": [
-        {"text":"Source Code (Github)", "url":"https://github.com/Wyzecat/portfoliosite"}
+        {"text":"Source Code (Github)", "url":"https://github.com/Wyzecat/portfoliosite"},
+        {"text": "Wireframe", "url":"https://www.figma.com/design/GnTvuDs00cyQaGiMG933sj/Untitled?node-id=0-1&p=f"}
     ],
     "images": [
-        {"small": "PortfolioWebsite/phgreen.png", "big": "PortfolioWebsite/phgreenbig.png", "name":"placeholder","order":"1"},
-        {"small": "PortfolioWebsite/phgreen.png", "big": "PortfolioWebsite/phgreenbig.png", "name":"placeholder 2","order":"2"}
+        {"small": "PortfolioWebsite/homepage.png", "big": "PortfolioWebsite/homepage.png", "name":"Site homepage","order":"1"}
     ]
 }
